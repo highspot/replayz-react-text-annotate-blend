@@ -2775,10 +2775,8 @@ const getOverlap$1 = (value) => {
 };
 
 const Mark = ({ color, className, end, start, onClick, content, tag, }) => {
-    const lumin = color ? luminTest(color) : false;
-    return (React.createElement("mark", { className: className, style: Object.assign({ backgroundColor: color || "#84d2ff", padding: "0 4px" }, (lumin && { color: "white" })), "data-start": start, "data-end": end, onMouseUp: () => onClick({ start: start, end: end }) },
-        content,
-        tag && (React.createElement("span", { style: { fontSize: "0.7em", fontWeight: 500, marginLeft: 6 } }, tag))));
+    color ? luminTest(color) : false;
+    return (React.createElement(React.Fragment, null));
 };
 
 const SplitTag = (props) => {

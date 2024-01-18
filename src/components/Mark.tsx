@@ -25,24 +25,7 @@ const Mark = <T extends MarkedSpan>({
 }: MarkProps<T>) => {
   const lumin = color ? luminTest(color) : false;
   return (
-    <mark
-      className={className}
-      style={{
-        backgroundColor: color || "#84d2ff",
-        padding: "0 4px",
-        ...(lumin && { color: "white" }),
-      }}
-      data-start={start}
-      data-end={end}
-      onMouseUp={() => onClick({ start: start, end: end } as T)}
-    >
-      {content}
-      {tag && (
-        <span style={{ fontSize: "0.7em", fontWeight: 500, marginLeft: 6 }}>
-          {tag}
-        </span>
-      )}
-    </mark>
+    <></>
   );
 };
 
